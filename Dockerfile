@@ -18,6 +18,7 @@ RUN tar -xvzf steamcmd_linux.tar.gz
 # make server directories
 RUN mkdir -p ~/.klei/DoNotStarveTogether/MyDediServer/Master
 RUN mkdir -p ~/.klei/DoNotStarveTogether/MyDediServer/Caves
+VOLUME ~/.klei/DoNotStarveTogether/MyDediServer
 
 # add server configs
 ADD cluster_tocken.txt ~/.klei/DoNotStarveTogether/MyDediServer/cluster_tocken.txt

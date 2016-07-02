@@ -16,3 +16,6 @@
     - `cluster_password`
     - `cluster_key`
 
+## Start server
+
+* `docker-compose up -d`

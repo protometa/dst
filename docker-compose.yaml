@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  master:
+    build: .
+    ports:
+      - 10889:10889
