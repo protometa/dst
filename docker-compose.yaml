@@ -1,7 +1,21 @@
 version: '2'
 
 services:
+
+  storage:
+    build: storage-container/
+
   master:
     build: .
+    volumes_from:
+      - storage
     ports:
       - 11000:11000
+    command: -shard Master
+
+
+  caves:
+    build: .
+    volumes_from:
+      - storage
+    command: -shard Caves
