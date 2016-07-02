@@ -4,4 +4,4 @@ services:
   master:
     build: .
     ports:
-      - 10889:10889
+      - 11000:11000
