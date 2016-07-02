@@ -1,5 +1,5 @@
 
-FROM unbutu:14.04
+FROM ubuntu:14.04
 
 MAINTAINER Luke Nimtz <luke.nimtz@gmail.com>
 
