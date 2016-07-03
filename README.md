@@ -1,6 +1,6 @@
 
 
-# Don't Start Together Dedicated Server
+# Don't Starve Together Dedicated Server
 
 *Requires 64-bit*
 
