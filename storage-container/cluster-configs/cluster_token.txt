@@ -1,1 +1,1 @@
-# replace this line with cluster tocken
+# replace this line with cluster token
