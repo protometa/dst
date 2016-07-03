@@ -11,11 +11,15 @@ services:
       - storage
     ports:
       - 11000:11000
+      - 10889
     command: -shard Master
-
 
   caves:
     build: .
     volumes_from:
       - storage
+    ports:
+      - 11001:11001
     command: -shard Caves
+    links:
+      - master

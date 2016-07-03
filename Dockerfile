@@ -18,6 +18,9 @@ RUN tar -xvzf steamcmd_linux.tar.gz
 # install dont starve together
 RUN ./steamcmd.sh +force_install_dir /root/dst/ +login anonymous +app_update 343050 validate +quit
 
+# expose master port (only master will listen on this)
+EXPOSE 10889
+
 # run server
 WORKDIR /root/dst/bin
 ENTRYPOINT ["/root/dst/bin/dontstarve_dedicated_server_nullrenderer", "-persistent_storage_root", "/root/.klei"]
