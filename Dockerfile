@@ -16,9 +16,8 @@ ADD https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz ./
 RUN tar -xvzf steamcmd_linux.tar.gz
 
 # install dont starve together
-RUN ./steamcmd/steamcmd.sh +force_install_dir /root/dst/ +login anonymous +app_update 343050 validate +quit
+RUN ./steamcmd.sh +force_install_dir /root/dst/ +login anonymous +app_update 343050 validate +quit
 
 # run server
 WORKDIR /root/dst/bin
-ENTRYPOINT /root/dst/bin/dontstarve_dedicated_server_nullrenderer \
-  -persistent_storage_root /root/.klei \
+ENTRYPOINT ["/root/dst/bin/dontstarve_dedicated_server_nullrenderer", "-persistent_storage_root", "/root/.klei"]
