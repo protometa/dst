@@ -14,7 +14,7 @@ A token can be generated from `Account` page in main menu. Paste it in `cluster_
 
 ### Edit Configs
 
-Modify `cluster.ini`
+Modify `cluster.ini`:
 * `cluster_name` will show up in server listings
 * `cluster_description` 
 * `cluster_password` if you want your server to be password protected
@@ -27,7 +27,7 @@ Modify `cluster.ini`
 
 ## Update server
 
-If the server stops showing up in the listings, it may need an update. With the services running execute the install/update command for each server and then restart.
+If the server stops showing up in the listings, it may need an update. With the services running execute the install/update command on each server and then restart.
 
     docker-compose exec master /root/steamcmd/steamcmd.sh +force_install_dir /root/dst/ +login anonymous +app_update 343050 validate +quit
     docker-compose exec caves /root/steamcmd/steamcmd.sh +force_install_dir /root/dst/ +login anonymous +app_update 343050 validate +quit
