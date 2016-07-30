@@ -24,7 +24,9 @@ Modify `cluster.ini`:
 
 ### Start server
 
-[With a `docker-machine` setup][1] just run `docker-compose up -d`.
+[With a `docker-machine` setup][1] just run:
+
+    docker-compose up -d
 
 
 ## Update server
