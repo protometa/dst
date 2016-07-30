@@ -23,6 +23,11 @@ RUN /bin/dst-update.sh
 ADD entrypoint.sh /bin/entrypoint.sh
 RUN chmod +x /bin/entrypoint.sh
 
+# add server configs
+ADD storage/ /root/.klei/DoNotStarveTogether/Cluster_1/
+
+VOLUME /root/.klei/
+
 # expose master port (only master will listen on this)
 EXPOSE 10889
 

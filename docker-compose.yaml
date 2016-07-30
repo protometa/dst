@@ -2,13 +2,10 @@ version: '2'
 
 services:
 
-  storage:
-    build: storage-container/
-
   master:
     build: .
-    volumes_from:
-      - storage
+    volumes:
+      - storage:/root/.klei/
     ports:
       - 11000:11000
       - 10889
@@ -16,10 +13,14 @@ services:
 
   caves:
     build: .
-    volumes_from:
-      - storage
+    volumes:
+      - storage:/root/.klei/
     ports:
       - 11001:11001
     command: -shard Caves
     links:
       - master
+
+volumes:
+  storage:
+    driver: local
