@@ -6,7 +6,7 @@
 
 Starts Cave cluster with Docker Compose. [Based on instructions from the forums.][0]
 
-## Quick Start
+## Setup
 
 ### Add server token
 
@@ -22,7 +22,7 @@ Modify `cluster.ini`:
 
 [*More info on these config files in the forums*][2]
 
-### Start server
+## Start server
 
 [With a `docker-machine` setup][1] just run:
 
