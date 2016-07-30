@@ -24,7 +24,7 @@ ADD entrypoint.sh /bin/entrypoint.sh
 RUN chmod +x /bin/entrypoint.sh
 
 # add server configs
-ADD storage/ /root/.klei/DoNotStarveTogether/Cluster_1/
+ADD configs/ /root/.klei/DoNotStarveTogether/Cluster_1/
 
 VOLUME /root/.klei/
 
