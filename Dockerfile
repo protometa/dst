@@ -15,7 +15,7 @@ WORKDIR /root/steamcmd
 ADD https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz ./
 RUN tar -xvzf steamcmd_linux.tar.gz
 
-# download and install dst (this part can take awhile)
+# download and install dst (this part can take a while)
 ADD dst-update.sh /bin/dst-update.sh
 RUN chmod +x /bin/dst-update.sh
 RUN /bin/dst-update.sh
